@@ -1,0 +1,43 @@
+<div class="mat-elevation-z8">
+  <table mat-table [dataSource]="notices" class="full-width-table" matSort aria-label="Elements">
+    <!-- Sender Column -->
+    <ng-container class="tablcontainer" matColumnDef="sender">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Sender</th>
+      <td mat-cell *matCellDef="let row">{{row.sender}}</td>
+    </ng-container>
+
+    <!-- announcment body Column -->
+    <ng-container class="tablcontainer" matColumnDef="body">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Anouncement</th>
+      <td mat-cell *matCellDef="let row">{{row.body}}</td>
+    </ng-container>
+
+    <!-- course body Column -->
+    <ng-container class="tablcontainer" matColumnDef="course">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Course</th>
+      <td mat-cell *matCellDef="let row">{{row.course}}</td>
+    </ng-container>
+
+    <!-- batch Column -->
+    <ng-container class="tablcontainer" matColumnDef="batch">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Batch</th>
+      <td mat-cell *matCellDef="let row">{{row.batch}}</td>
+    </ng-container>
+
+    <!-- Student Column -->
+    <ng-container class="tablcontainer" matColumnDef="student">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header >Student</th>
+      <td mat-cell *matCellDef="let row">{{row.student}}</td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+
+  <mat-paginator #paginator
+      [length]="dataSource?.data.length"
+      [pageIndex]="0"
+      [pageSize]="50"
+      [pageSizeOptions]="[15, 30, 50, 100]">
+  </mat-paginator>
+</div>

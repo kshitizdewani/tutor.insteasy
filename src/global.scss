@@ -1,0 +1,111 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+
+ion-split-pane{
+  --side-width:200px;
+  --border:0px;
+}
+
+.rounded{
+  --border-radius: 15px 15px 15px 15px;
+}
+
+//.selector{
+//  --placeholder-color: black;
+//  --placeholder-opacity: 1;
+//  padding-top: 5px;
+//  width: 200px;
+//}
+ion-select::part(text) {
+  color: black;
+}
+
+/* Set the icon color and opacity */
+ion-select::part(icon) {
+  color: black;
+  opacity: 1;
+}
+ion-select {
+  //--margin-top: 5px;
+  width: 100%;
+  justify-content: center;
+  --padding-end:1px;
+  --padding-start: 2px;
+}
+ion-select::part(icon) {
+  padding-left: 3px;
+  color: black;
+  opacity: 1;
+  //slot: end;
+}
+ion-select::part(placeholder),
+ion-select::part(text) {
+  flex: 0 0 auto;
+}
+
+/* Set the placeholder color and opacity */
+ion-select::part(placeholder) {
+  color: black;
+  opacity: 1;
+}
+
+
+.navbar{
+
+  --border-radius: 0px 0px 15px 15px;
+  -webkit-box-shadow: 7px 9px 18px -3px rgba(0,0,0,0.64);
+  -moz-box-shadow: 7px 9px 18px -3px rgba(0,0,0,0.64);
+  -box-shadow: 7px 9px 18px -3px rgba(0,0,0,0.64);
+}
+ion-grid{
+--ion-grid-padding-md:25px;
+}
+
+ion-textarea{
+  //--border: 1px 1px 1px 1px;
+  --border-radius: 15px;
+  --ion-grid-padding-md: 10px;
+  border: 1px black;
+}
+
+//.selector{
+//  width: 100px;
+//   border: solid 2px black;
+//}
+
+.textarea{
+  border:  1px ;
+}
+
+.menu-item{
+  margin-bottom: 10px;
+}
+.selector{
+  border: 1px black;
+  --border-radius: 15px;
+}

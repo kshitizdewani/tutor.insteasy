@@ -1,0 +1,67 @@
+<ion-app>
+    <ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+<!--      <ion-grid>-->
+<!--          <ion-row>-->
+<!--              <ion-col slot="start">-->
+<!--          <ion-col slot="start">-->
+              <ion-buttons slot="start">
+              <ion-menu-button></ion-menu-button>
+              </ion-buttons>
+<!--          </ion-col>-->
+
+              <ion-title>
+                InstEasy
+              </ion-title>
+<!--          </ion-col>-->
+         <ion-col slot="end" *ngIf="userService.isLoggedIn | async as isLoggedIn">
+            <ion-row><ion-button (click)="onLogout()">Logout</ion-button></ion-row>
+            </ion-col>
+<!--          </ion-row>-->
+<!--      </ion-grid>-->
+
+
+  </ion-toolbar>
+</ion-header>
+     <ion-split-pane content-id="menu" style="padding-right: 50px;">
+<!--        <ion-grid><ion-row ><ion-col >-->
+       <ion-menu content-id="menu" class="navbar rounded" type="push" style="margin-top: 50px;margin-right: 50px;">
+                    <ion-card class="navbar">
+             <ion-card-content>
+         <div style="height: max-content;">
+         <ion-list>
+           <ion-item lines="none" style="margin-top: 60px;">
+              <ion-text class="menu-item"><h2>Dashboard</h2></ion-text>
+           </ion-item>
+           <ion-item lines="none">
+              <ion-text class="menu-item"><h2>Overview</h2></ion-text>
+           </ion-item>
+           <ion-item lines="none">
+               <ion-text class="menu-item"><h2>Go live</h2></ion-text>
+           </ion-item>
+           <ion-item lines="none">
+               <ion-text class="menu-item"><h2>Doubt Class</h2></ion-text>
+           </ion-item>
+           <ion-item lines="none">
+               <ion-text class="menu-item"><h2>Notice Board</h2></ion-text>
+           </ion-item>
+           <ion-item lines="none">
+               <ion-text class="menu-item"><h2>Go live</h2></ion-text>
+           </ion-item>
+           <ion-item lines="none">
+               <ion-text class="menu-item"><h2>Doubt CLass</h2></ion-text>
+           </ion-item>
+
+         </ion-list>
+           </div>
+                 </ion-card-content>
+             </ion-card>
+       </ion-menu>
+<!--         </ion-col>-->
+<!--         <ion-col style="height: auto">-->
+<!--            <app-table></app-table>-->
+            <ion-router-outlet id="menu" style="margin-right: 20px;"></ion-router-outlet>
+<!--             </ion-col>-->
+<!--             </ion-row></ion-grid>-->
+     </ion-split-pane>
+</ion-app>

@@ -1,0 +1,7 @@
+{
+  "name": "insteasyTutorFront",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
