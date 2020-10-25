@@ -33,7 +33,7 @@
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3",
     "typescript": "~3.9.5",
-    "ionic":"~5.4.16"
+    "ionic": "6.11.8"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.1002.0",
