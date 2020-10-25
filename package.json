@@ -1,5 +1,5 @@
 {
-  "name": "insteasyTutorFront",
+  "name": "insteasytutorfront",
   "version": "0.0.1",
   "author": "Ionic Framework",
   "homepage": "https://ionicframework.com/",
@@ -38,7 +38,6 @@
     "@angular/compiler-cli": "^10.0.14",
     "@angular/language-service": "~10.0.0",
     "@capacitor/cli": "2.4.2",
-    "@ionic/angular-toolkit": "^2.3.0",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
