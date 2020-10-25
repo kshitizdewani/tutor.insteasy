@@ -35,7 +35,7 @@ export class UserService {
   // // error messages received from the login attempt
   // public errors: any = [];
 
-  constructor(private router: Router, private server: ServerService) {
+  constructor(private router: Router, public server: ServerService) {
     // this.httpOptions = {
     //   headers: new HttpHeaders({'Content-Type': 'application/json'})
     // };
